@@ -8,7 +8,7 @@
 
 <p align="center">
 <a href="LICENSE"><img alt="License" src="https://img.shields.io/static/v1?logo=MIT&color=Blue&message=MIT&label=License"/></a>
-<a href="https://wakatime.com/badge/github/Simatwa/qr-maker"><img src="https://wakatime.com/badge/github/Simatwa/qr-maker.svg" alt="wakatime"/></a>
+<a href="https://wakatime.com/badge/github/Simatwa/qrcode-maker"><img src="https://wakatime.com/badge/github/Simatwa/qrcode-maker.svg" alt="wakatime"></a>
 <a href="#"><img src="https://img.shields.io/static/v1?label=Development&message=Alpha&color=Orange&logo=progress" alt="Progress"/></a>
 <a href="#"><img src="https://img.shields.io/static/v1?label=Code Style&message=Black&color=black&logo=Black" alt="Code-style"/></a>
 </p>
@@ -44,4 +44,4 @@ The v1 endpoint will be available at `http://localhost:8000/v1`
 
 ## Conclusion
 
-Have some fun with the api available [here](qrcode.pythonanywhere.com/v1?data=hello)
+Have some fun with the api available [here](https://qrcode.pythonanywhere.com/v1?data=hello)
