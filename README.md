@@ -44,4 +44,4 @@ The v1 endpoint will be available at `http://localhost:8000/v1`
 
 ## Conclusion
 
-Have some fun with the api available [here](qrcode.pythoanywhere.com/v1?data=hello)
+Have some fun with the api available [here](qrcode.pythonanywhere.com/v1?data=hello)
