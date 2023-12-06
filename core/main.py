@@ -13,9 +13,10 @@ class MakeQrcode(MethodView):
     init_every_request = True
 
     def __init__(self):
-        getArg = lambda key, default: request.args.get(key) or default
+        getArg = lambda key, default: request.args.get(key,default)
         self.data = getArg("data", "")
-        self.fit = bool(getArg(True, True))
+        fit_param = getArg('fit', True)
+        self.fit = False if fit_param in ('0','false') else True
         self.version = getArg("version", 1)
         self.box_size = getArg("box_size", 10)
         self.border = getArg("border", 5)
@@ -42,7 +43,10 @@ class MakeQrcode(MethodView):
         except Exception as e:
             return (
                 jsonify(
-                    {"message": f"Error occured - {e.args[1] if len(e.args)>1 else e}"}
+                    {
+                        "message": f"Error occurred",
+                        "error": f"{e.args[1] if len(e.args) > 1 else e}"
+                    }
                 ),
                 400,
             )
