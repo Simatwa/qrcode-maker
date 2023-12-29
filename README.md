@@ -45,3 +45,5 @@ The v1 endpoint will be available at `http://localhost:8000/v1`
 ## Conclusion
 
 Have some fun with the api available [here](https://qrcode.pythonanywhere.com/v1?data=hello)
+
+Kick off with this https://qrcode.pythonanywhere.com/v1?data=hello%20world&back_color=yellow&box_size=15&fill_color=blue
